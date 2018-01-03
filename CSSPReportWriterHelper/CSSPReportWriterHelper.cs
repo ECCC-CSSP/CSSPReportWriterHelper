@@ -39,8 +39,9 @@ namespace CSSPReportWriterHelper
         {
             InitializeComponent();
 
-            user = new GenericPrincipal(new GenericIdentity("charles.leblanc2@canada.ca", "Forms"), null);
-            reportBaseService = new ReportBaseService(LanguageEnum.en, treeViewCSSP, user);
+            //user = new GenericPrincipal(new GenericIdentity("charles.leblanc2@canada.ca", "Forms"), null);
+            //reportBaseService = new ReportBaseService(LanguageEnum.en, treeViewCSSP, user);
+            reportBaseService = new ReportBaseService(LanguageEnum.en, treeViewCSSP);
             reportBaseService.ReportFileType = ReportFileTypeEnum.CSV;
             treeViewCSSP.ExpandAll();
             Setup();
