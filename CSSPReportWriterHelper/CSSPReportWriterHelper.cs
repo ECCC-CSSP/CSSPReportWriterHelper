@@ -1452,7 +1452,7 @@ namespace CSSPReportWriterHelper
         public string GenerateDBCode()
         {
 
-            richTextBoxResults.Text = @"Generating File [C:\CSSP latest code old\CSSPWebToolsDBDLL\CSSPWebToolsDBDLL\Services\ReportServiceGenerated_____.cs]" + "\r\n";
+            richTextBoxResults.Text = @"Generating File [C:\CSSP latest code old\CSSPDBDLL\CSSPDBDLL\Services\ReportServiceGenerated_____.cs]" + "\r\n";
             richTextBoxResults.AppendText(@"Generating Files:" + "\r\n");
 
             List<Type> typeList = new List<Type>()
@@ -1537,7 +1537,7 @@ namespace CSSPReportWriterHelper
                     return retStr;
             }
 
-            richTextBoxResults.AppendText("\r\nPlease Recompile CSSPWebToolsDBDLL project\r\n");
+            richTextBoxResults.AppendText("\r\nPlease Recompile CSSPDBDLL project\r\n");
 
             return "";
         }
@@ -1547,7 +1547,7 @@ namespace CSSPReportWriterHelper
             PartialFileName = PartialFileName.Substring(0, PartialFileName.Length - 5);
 
             StringBuilder sb = new StringBuilder();
-            FileInfo fi = new FileInfo(@"C:\CSSP latest code old\CSSPWebToolsDBDLL\CSSPWebToolsDBDLL\Services\ReportServiceGenerated" + PartialFileName + ".cs");
+            FileInfo fi = new FileInfo(@"C:\CSSP latest code old\CSSPDBDLL\CSSPDBDLL\Services\ReportServiceGenerated" + PartialFileName + ".cs");
 
             richTextBoxResults.AppendText(@"ReportServiceGenerated" + PartialFileName + ".cs\r\n");
 
@@ -1555,10 +1555,10 @@ namespace CSSPReportWriterHelper
             sb.AppendLine(@"using System.Security.Principal;");
             sb.AppendLine(@"using System.Text;");
             sb.AppendLine(@"using System.Threading.Tasks;");
-            sb.AppendLine(@"using CSSPWebToolsDBDLL.Models;");
+            sb.AppendLine(@"using CSSPDBDLL.Models;");
             sb.AppendLine(@"using System.Collections.Generic;");
             sb.AppendLine(@"using System;");
-            sb.AppendLine(@"using CSSPWebToolsDBDLL.Services.Resources;");
+            sb.AppendLine(@"using CSSPDBDLL.Services.Resources;");
             sb.AppendLine(@"using System.Transactions;");
             sb.AppendLine(@"using System.Web.Mvc;");
             sb.AppendLine(@"using System.Threading;");
@@ -1569,7 +1569,7 @@ namespace CSSPReportWriterHelper
             sb.AppendLine(@"using System.Reflection;");
             sb.AppendLine(@"");
 
-            sb.AppendLine(@"namespace CSSPWebToolsDBDLL.Services");
+            sb.AppendLine(@"namespace CSSPDBDLL.Services");
             sb.AppendLine(@"{");
             sb.AppendLine(@"    public partial class ReportService" + PartialFileName + "");
             sb.AppendLine(@"    {");
@@ -3372,7 +3372,7 @@ namespace CSSPReportWriterHelper
             ToolTip toolTipGenerateModel = new ToolTip();
             toolTipGenerateModel.SetToolTip(butGenerateModels, @"C:\CSSP latest code old\CSSPModelsDLL\CSSPModelsDLL\Models\ReportGeneratedModel.cs");
             ToolTip toolTipGenerateDB = new ToolTip();
-            toolTipGenerateDB.SetToolTip(butGenerateDBCode, @"C:\CSSP latest code old\CSSPWebToolsDBDLL\CSSPWebToolsDBDLL\Services\ReportServiceGenerated______.cs");
+            toolTipGenerateDB.SetToolTip(butGenerateDBCode, @"C:\CSSP latest code old\CSSPDBDLL\CSSPDBDLL\Services\ReportServiceGenerated______.cs");
             //ToolTip toolTipGeneratReplace = new ToolTip();
             //toolTipGeneratReplace.SetToolTip(butGenerateDBGetAndReplace, @"C:\CSSP latest code old\CSSPReportWriterHelperDLL\CSSPReportWriterHelperDLL\Services\ReportGeneratedDBReplace.cs");
 

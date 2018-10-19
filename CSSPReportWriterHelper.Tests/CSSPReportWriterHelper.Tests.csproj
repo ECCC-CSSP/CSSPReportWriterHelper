@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSSPDBDLL">
+      <HintPath>..\..\CSSPDBDLL\CSSPDBDLL\bin\Debug\CSSPDBDLL.dll</HintPath>
+    </Reference>
     <Reference Include="CSSPEnumsDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\CSSPEnumsDLL\CSSPEnumsDLL\bin\Debug\CSSPEnumsDLL.dll</HintPath>
@@ -46,9 +49,6 @@
     </Reference>
     <Reference Include="CSSPReportWriterHelperDLL">
       <HintPath>..\..\CSSPReportWriterHelperDLL\CSSPReportWriterHelperDLL\bin\Debug\CSSPReportWriterHelperDLL.dll</HintPath>
-    </Reference>
-    <Reference Include="CSSPWebToolsDBDLL">
-      <HintPath>..\..\CSSPWebToolsDBDLL\CSSPWebToolsDBDLL\bin\Debug\CSSPWebToolsDBDLL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />

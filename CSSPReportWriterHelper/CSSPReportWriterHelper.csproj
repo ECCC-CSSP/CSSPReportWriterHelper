@@ -25,7 +25,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>46</ApplicationRevision>
+    <ApplicationRevision>47</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -75,6 +75,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="CSSPDBDLL">
+      <HintPath>..\..\CSSPDBDLL\CSSPDBDLL\bin\Debug\CSSPDBDLL.dll</HintPath>
+    </Reference>
     <Reference Include="CSSPEnumsDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\CSSPEnumsDLL\CSSPEnumsDLL\bin\Debug\CSSPEnumsDLL.dll</HintPath>
@@ -86,9 +89,6 @@
     <Reference Include="CSSPReportWriterHelperDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\CSSPReportWriterHelperDLL\CSSPReportWriterHelperDLL\bin\Debug\CSSPReportWriterHelperDLL.dll</HintPath>
-    </Reference>
-    <Reference Include="CSSPWebToolsDBDLL">
-      <HintPath>..\..\CSSPWebToolsDBDLL\CSSPWebToolsDBDLL\bin\Debug\CSSPWebToolsDBDLL.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
